@@ -1,4 +1,4 @@
-import HealthPlatformPage from '../pageObjects/HealthPlatformPage';
+import { HealthPlatformPage, GoogleLogIn } from '../pageObjects/HealthPlatformPage';
 
 describe('test suit', () => {
   it('open and accept cookies step', () => {
@@ -9,6 +9,8 @@ describe('test suit', () => {
   it('login step', () => {
     const page = new HealthPlatformPage();
     page.visitAndAccept();
+    const googleLogin = new GoogleLogIn();
+    googleLogin.login();
     // Add login logic here if needed
   });
 })
