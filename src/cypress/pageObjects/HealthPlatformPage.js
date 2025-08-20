@@ -1,11 +1,20 @@
-class HealthPlatformPage {
-  visit() {
-    cy.visit('https://health-platform.online/')
-  }
+			class HealthPlatformPage {
+				visit() {
+					cy.visit('https://health-platform.online/');
+				}
 
-  acceptAll() {
-    cy.contains('button', 'Akceptuj wszystkie').should('exist').click()
-  }
-}
+				acceptAll() {
+					cy.contains('button', 'Akceptuj wszystkie').should('exist').click();
+				}
 
-export default HealthPlatformPage;
+				accept() {
+					cy.contains('button', 'Akceptuj').should('exist').click();
+				}
+
+				visitAndAccept() {
+					this.visit();
+					this.accept();
+				}
+			}
+
+			export default HealthPlatformPage;
