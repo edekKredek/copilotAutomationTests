@@ -1,6 +1,3 @@
 # Ignore everything
-/node_modules/
-
-# Except the cypress folder
-!/cypress/
+/src/node_modules
 
