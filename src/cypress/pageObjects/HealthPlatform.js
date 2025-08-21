@@ -16,7 +16,8 @@ class GoogleLogIn {
     }
 }
 
-class HealthPlatformPage {
+
+class HealthPlatform {
     visit() {
         cy.visit('https://health-platform.online/');
     }
@@ -35,7 +36,7 @@ class HealthPlatformPage {
     }
 }
 
-export { HealthPlatformPage, GoogleLogIn };
+export { HealthPlatform, GoogleLogIn };
 
 
 
